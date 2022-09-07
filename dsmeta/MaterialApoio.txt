@@ -1,0 +1,21 @@
+Material de apoio aula 1
+https://github.com/devsuperior/sds-dsmeta
+
+Comando para iniciar o projeto react:
+yarn create vite frontend --template react-ts
+O vite é uma ferramenta de construção que visa fornecer uma experiência de desenvolvimento mais rápida e enxuta para projetos web modernos.
+
+Após gerar a pasta frontend com a base projeto com comando acima, rodar o comando yarn para instalar as dependências do projeto de acordo com que está no packjson.
+
+Para rodar o projeto damos o comando yarn dev.
+
+Criar a base do projeto Spring vamos no site do spring initializr.
+
+Obs: O Maven é semelhante ao npm/yarn do node, ele é o gerenciador no java.
+
+Seleciona a pasta principal projetos com a IDE do STS, em seguida vamos em import -> exists maven e selecionamos a pasta gerada pelo spring initializr, damos um OK em aguardamos o maven baixar as dependências da internet.
+
+Plugin no material de apoio para inserir no pom.xml para evitar alguns possíveis erros de versão. Feito isso ir em maven -> update projeto(seleciona a caixinha force update), feito isso basta dar ok.
+
+PAUSADO NO 1:22:20 -> DatePicker
+Verificar porque do formato SVG
