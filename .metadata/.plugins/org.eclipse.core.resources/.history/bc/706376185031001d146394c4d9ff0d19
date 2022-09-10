@@ -1,0 +1,5 @@
+package com.devsuperior.dsmeta.services;
+// Classe reponsável por todas as operações de venda, no caso do nosso sistema.
+public class SaleService {
+
+}

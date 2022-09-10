@@ -1,0 +1,5 @@
+package com.devsuperior.dsmeta.controllers;
+/// Responsável por fornecer nosso endpoints, para que nosso front end possa enviar requisições
+public class SaleController {
+
+}
