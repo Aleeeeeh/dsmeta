@@ -17,5 +17,46 @@ Seleciona a pasta principal projetos com a IDE do STS, em seguida vamos em impor
 
 Plugin no material de apoio para inserir no pom.xml para evitar alguns possíveis erros de versão. Feito isso ir em maven -> update projeto(seleciona a caixinha force update), feito isso basta dar ok.
 
-PAUSADO NO 1:22:20 -> DatePicker
-Verificar porque do formato SVG
+Como a aplicação Spring boot vai estar hospedada em um lugar e o nosso front end em outro, para se comunicar precisamos liberar esse acesso. Esse processo se chama Cors.
+
+**** Spring framework ****
+Criamos uma pasta SecurityConfig com código padrão de um projeto Spring para liberar o cors para que nosso front end consiga se comunicar com nosso back.
+Startar uma aplicação do spring vamos no canto inferior esquerdo em local, expandimos e no nome do projeto que aparecer clicamos com direito e vamos em restart.
+
+Para que tenhamos um dado relacionado da minha tabela com do nosso banco de dados chamamos isso de mapeamento objeto relacional, utilizamos anotations para tal.
+
+Banco de dados H2
+É um banco de dados em memória, muito utilizada para fase de desenvolvimento de uma aplicação.
+
+// Configurações
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.username=sa
+spring.datasource.password=
+
+// Aplicativo para acessar o banco de dados no navegador
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+
+// Aparecer a consulta do banco de dados SQL
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+// /h2-console caminho para acessar o banco no navegador.
+No navegador passamos as informações que estão contidas no nosso código de configurações.
+
+Dentro de src/main/resources -> Pasta onde fica o arquivo application.properties(Configuração do banco), criamos um arquivo, new -> file -> import.sql -> Colocamos os comandos como insert para inserir dados na tabela e quando salvarmos e reiniciar o servidor os dados serão inseridos de forma automática(Recurso exclusivo do Spring).
+
+// Criação da API
+1° Criamos o repository que nos permite acessar ao banco de dados, que seria nosso componente.
+2° Criamos o service, responsável por todas as operações do nosso sistema, exemplo um método onde trará todos os dados da tabela de vendas.
+3° Criamos o controller responsável pela criação das rotas, e no exemplo chamamos o serviço que retorna todos os dados da tabela já formatado em JSON. 
+
+Plataforma para envio de SMS, emails TWILLIO
+1° Criar conta no site oficial.
+2° Colocar trecho de código de dependência da TWILLO no pom.xml
+3° Configuramos o Twillo nas nossas propriedades(application.properties), para não colocar nossas credenciais que são pessoais no código que vai pro github.
+4°Para funcionar o endpoint da notificação por SMS, precisamos configurar as variáveis de ambiente do projeto, para isso clicamos com direito na pasta do projeto, no caso dsmeta, vamos em run As -> run configuration, depois é só pegar as varáveis definidas no application.properties e os dados na página inicial da Twillo.
+
+*** Axios ***
+Nos permite fazer requisições de uma forma mais fácil.
+yarn add axios@0.27.2
