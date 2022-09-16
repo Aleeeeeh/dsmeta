@@ -60,3 +60,14 @@ Plataforma para envio de SMS, emails TWILLIO
 *** Axios ***
 Nos permite fazer requisições de uma forma mais fácil.
 yarn add axios@0.27.2
+
+*** Utils ***
+Nossos utilitários, ou seja, são arquivos com códigos que conseguimos aproveitar em certos pontos do sistema, nesse exemplo criamos uma URL base, e nos nossos arquivos ao invés de setarmos o endereço do servidor, ele passa uma variável.
+
+*** Models ***
+Colocamos os tipos do nosso negócio, no exemplo sale(venda), no tipo venda, colocar a chave que recebemos do corpo do JSon da API, e o tipo que ela vai receber, se é string, number etc...
+E com esse tipo iremos criar uma lista vazia, porém com essas chaves, e da API iremos receber os valores.
+
+
+
+PAUSE 31:38 min
