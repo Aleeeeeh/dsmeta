@@ -20,12 +20,16 @@ function SalesCard() {
     const [sales, setSales] = useState<sale[]>([])
 
     useEffect(() => {
-        axios.get(`${BASE_URL}/sales`)
+
+        const dmin = minDate.toISOString().slice(0, 10);
+        const dmax = maxDate.toISOString().slice(0, 10);
+        console.log(dmin)
+        console.log(dmax)
+        axios.get(`${BASE_URL}/sales?minDate=${dmin}&maxDate=${dmax}`)
             .then(Response =>{
                 setSales(Response.data.content); // Pega a lista de dados do retorno da API
-                console.log(Response.data);
             })
-    }, [])
+    }, [minDate, maxDate]) // Aqui configuramos para sempre que algum dado dentro desse lista mudar, rodar o useEffect novamente
 
     return (
         <div className="dsmeta-card">
