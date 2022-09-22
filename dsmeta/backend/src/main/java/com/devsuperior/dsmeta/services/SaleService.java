@@ -27,7 +27,7 @@ public class SaleService {
 		
 		//Recebemos as datas como String do front, aqui convertemos pro tipo LocalDate
 		// Se data minima vier vazio pegamos data atual - 365 dias
-		LocalDate min = minDate.equals("") ? today.minusDays(365) : LocalDate.parse(maxDate);
+		LocalDate min = minDate.equals("") ? today.minusDays(365) : LocalDate.parse(minDate);
 		// Usamos expressão condicional ternária
 		LocalDate max = maxDate.equals("") ? today : LocalDate.parse(maxDate);
 		

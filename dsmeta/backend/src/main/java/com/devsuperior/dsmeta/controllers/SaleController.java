@@ -25,7 +25,7 @@ public class SaleController {
 	@Autowired
 	private SmsService smsService;
 	
-	///Sintaxe da requisição http://localhost:8080/sales?minDate=2022-01-01&maxDate=2022-01-31
+	///Sintaxe da requisição http://localhost:8080/sales?minDate=2021-11-01&maxDate=2021-12-31
 	
 	@GetMapping
 	public Page<Sale> findSales( 
