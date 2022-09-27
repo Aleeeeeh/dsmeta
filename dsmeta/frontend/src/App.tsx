@@ -1,3 +1,5 @@
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Header from './components/Header'
 import SalesCard from "./components/SalesCard"
 
@@ -6,6 +8,7 @@ function App() {
     /// <> São fragments para inserirmos mais de um elemento filho, ou seja usamos quando queremos 
     /// colocar mais de uma tag no mesmo return</>
     <>
+      <ToastContainer />
       <Header />
       <main>
         <section id="sales">
