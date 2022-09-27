@@ -9,7 +9,7 @@ function Header() {
                 <h1>DSMeta</h1>
                 <p>
                     Desenvolvido por
-                    <a href="https://br.linkedin.com/in/alefe-ferreira-322125235?trk=public_profile_samename-profile">@AlefeSilva</a>
+                    <a href="https://br.linkedin.com/in/alefe-ferreira-322125235?trk=public_profile_samename-profile" target="_blank" title="Linkedin pessoal">@AlefeSilva</a>
                 </p>
             </div>
         </header>

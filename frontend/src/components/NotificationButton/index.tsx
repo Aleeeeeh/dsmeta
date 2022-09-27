@@ -19,7 +19,7 @@ function handleClick(id : number){
 function NotificationButton({saleId} : Props) {
     return (
         <div className="dsmeta-red-btn" onClick={() => {handleClick(saleId)}}>
-            <img src={icon} alt="Notificar" />
+            <img src={icon} alt="Notificar" title="Disparar SMS" />
         </div>
     )
 }
