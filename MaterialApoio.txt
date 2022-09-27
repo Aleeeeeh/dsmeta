@@ -70,4 +70,4 @@ E com esse tipo iremos criar uma lista vazia, porém com essas chaves, e da API 
 
 
 
-PAUSE 57:40:00 min
+PAUSE 59:00:00 min
