@@ -13,3 +13,8 @@ Typescript <br />
 ### Tela
 
 ![image](https://github.com/Aleeeeeh/dsmeta/assets/58706720/5c337e7d-4228-4701-97e8-78d6e9744ecb)
+
+
+#### Autor 
+Alefe Ferreira da Silva
+https://www.linkedin.com/in/alefe-ferreira-322125235/
